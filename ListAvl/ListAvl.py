@@ -43,18 +43,18 @@ class listAvl:
 
     #cambia lista in avl e viceversa
     def __change(self, coll):
-        if(self.checkListOrAvl(coll)):
+        if(self.__checkListOrAvl(coll)):
             avl = AVLTree()
             avl.insert()
 
 
     def insert(self, key, value):
-        pos = self.trovaInsiemeGiusto(key)
-        if(self.checkListorAvl(self.array[pos])):
+        pos = self.__trovaInsiemeGiusto(key)
+        if(self.__checkListorAvl(self.array[pos])):
             list = ListaCollegata(self.array[pos])
             list.addAsLast(key, value)
             if(list.lenght() == 6):
-                self.change(list)
+                self.__change(list)
         else:
             avl = AVLTree(self.array[pos])
             avl.insert(key, value)
