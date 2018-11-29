@@ -28,6 +28,16 @@ class ListaCollegata:
     def isEmpty(self):
         return (self.first == None)
 
+    def lenght(self):
+        if(self.first == None):
+            return 0
+        c = 1
+        rec = Record(self.first)
+        while(rec.next == None):
+            rec = Record(rec.next)
+            c += 1
+        return c
+
     def getFirst(self):
         if self.first == None:
             return None

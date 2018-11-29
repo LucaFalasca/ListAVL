@@ -9,10 +9,8 @@
     dell'albero AVL, un albero binario di ricerca
     bilanciato in altezza
 """
-
-import trees.binaryTree
-from trees.binaryTree import BinaryNode
-from dictTrees.binarySearchTree import BinarySearchTree
+from Collection.dictTrees.binarySearchTree import BinarySearchTree
+from Collection.trees.binaryTree import BinaryTree
 
 
 class AVLTree(BinarySearchTree):

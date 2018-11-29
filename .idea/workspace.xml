@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="" />
+    <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/dictTrees/avlTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/dictTrees/avlTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Collection/list/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/list/LinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ListAvl/ListAvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/ListAvl/ListAvl.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,22 +45,99 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1290718445">
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="Python Console" value="90" />
+          <entry key="py" value="1566" />
+          <entry key="txt" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Python" value="1656" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="9" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Python" value="9" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="305">
+              <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
               <folding>
-                <marker date="1543485671720" expanded="true" signature="387:392" ph="..." />
+                <element signature="e#4#52#0" expanded="true" />
+                <marker date="1543500845961" expanded="true" signature="510:515" ph="..." />
+                <marker date="1543500845961" expanded="true" signature="912:1101" ph="..." />
+                <marker date="1543500845961" expanded="true" signature="1163:1262" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+              <folding>
+                <marker date="1543499199569" expanded="true" signature="725:935" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Collection/dictTrees/avlTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-595">
+              <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
+              <folding>
+                <element signature="e#276#342#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Collection/trees/binaryTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +145,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/ListAvl/prova.py" />
+        <option value="$PROJECT_DIR$/Collection/dictTrees/avlTree.py" />
+        <option value="$PROJECT_DIR$/Collection/list/LinkedList.py" />
+        <option value="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" />
         <option value="$PROJECT_DIR$/ListAvl/ListAvl.py" />
       </list>
     </option>
@@ -101,6 +188,18 @@
               <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
               <item name="Collection" type="462c0819:PsiDirectoryNode" />
               <item name="dictTrees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
+              <item name="Collection" type="462c0819:PsiDirectoryNode" />
+              <item name="list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
+              <item name="Collection" type="462c0819:PsiDirectoryNode" />
+              <item name="trees" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
@@ -914,11 +1013,19 @@
       <option name="project" value="LOCAL" />
       <updated>1543485654578</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ho tolto la ù">
+      <created>1543486222406</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543486222406</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -934,7 +1041,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32879046" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -954,28 +1061,80 @@
     <MESSAGE value="tolto def ciao" />
     <MESSAGE value="add collection" />
     <MESSAGE value="add dictionary trees" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dictionary trees" />
+    <MESSAGE value="ho tolto la ù" />
+    <option name="LAST_COMMIT_MESSAGE" value="ho tolto la ù" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Collection/LinkedList.py" />
     <entry file="file://$PROJECT_DIR$/Collection/trees/tree.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Collection/dictTrees/avlTree.py">
+    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/LinkedList.py" />
+    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/Dictionary.py" />
+    <entry file="file://$PROJECT_DIR$/Collection/list/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
+    <entry file="file://$PROJECT_DIR$/ListAvl/prova.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state>
+          <caret lean-forward="true" selection-end-line="12" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.2/system/python_stubs/907059903/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1321">
+          <caret line="809" column="8" selection-start-line="809" selection-start-column="8" selection-end-line="809" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/trees/binaryTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="107" column="26" lean-forward="true" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/dictTrees/avlTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="146" column="13" selection-start-line="146" selection-start-column="13" selection-end-line="146" selection-end-column="13" />
           <folding>
-            <marker date="1543485671720" expanded="true" signature="387:392" ph="..." />
+            <element signature="e#276#342#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/LinkedList.py" />
-    <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/Dictionary.py" />
+    <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="61" column="26" selection-start-line="61" selection-start-column="26" selection-end-line="61" selection-end-column="26" />
+          <folding>
+            <marker date="1543499199569" expanded="true" signature="725:935" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="39" column="16" lean-forward="true" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+          <folding>
+            <element signature="e#4#52#0" expanded="true" />
+            <marker date="1543500845961" expanded="true" signature="510:515" ph="..." />
+            <marker date="1543500845961" expanded="true" signature="912:1101" ph="..." />
+            <marker date="1543500845961" expanded="true" signature="1163:1262" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
