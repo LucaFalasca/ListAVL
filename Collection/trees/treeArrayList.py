@@ -9,7 +9,7 @@
     n-ari dove i figli di un nodo sono raggruppati in
     una lista
 """
-from trees.tree import Tree
+from Collection.trees.tree import Tree
 
 
 class TALNode:
@@ -28,6 +28,8 @@ class TALNode:
 
     def __repr__(self):
         return self.__str__()
+
+
 
 
 class TreeArrayList(Tree):

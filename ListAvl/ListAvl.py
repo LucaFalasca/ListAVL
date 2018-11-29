@@ -30,7 +30,7 @@ class listAvl:
         else:
             return self.d + 1
 
-    # ritorna true se lista e false se avl
+    # ritorna true se la collezione e' una lista e false se e' avl
     def __checkListOrAvl(self, coll):
         if(type(coll) == ListaCollegata):
             return True
@@ -69,7 +69,25 @@ class listAvl:
             avl.balInsert(key, value)
 
     def search(self, key):
-        pass
+        pos = self.__trovaInsiemeGiusto(key)
+        if(self.__checkListOrAvl(self.array[pos])):
+            list = ListaCollegata(self.array[pos])
+            current  = list.getFirstRecord()
+            while(current != None):
+                if(key == current):
+                    return True
+                 current = current.next
+            return False
+        else:
+            pass
+            #cerca elemento in AVL
+
+
+            #search in linkedList
+        else:
+            pass
+            #search in avl
+
 
     def delete(self, key):
         pos = self.__trovaInsiemeGiusto(key)
@@ -80,5 +98,5 @@ class listAvl:
             avl = AVLTree(self.array[pos])
             avl.delete(key)
             avl.balDelete(key)
-            if(avl.size() == 5):     #metodo da implementare
+            if(avl.size() == 5):
                 self.__change(avl)

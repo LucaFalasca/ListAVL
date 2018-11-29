@@ -12,7 +12,6 @@
 from Collection.dictTrees.binarySearchTree import BinarySearchTree
 from Collection.trees.binaryTree import BinaryTree, BinaryNode
 
-
 class AVLTree(BinarySearchTree):
     """
     Un albero AVL è un albero di ricerca binario bilanciato
