@@ -45,12 +45,19 @@ class listAvl:
     def __change(self, coll):
         if(self.__checkListOrAvl(coll)):
             avl = AVLTree()
-            avl.insert()
+            for i in range(6):
+                avl.insert(coll.popFirst())
+        else:
+            list = ListaCollegata()
+            AVLTree(coll)
+            for i in range(5):
+                coll.cutSingleSon()
+
 
 
     def insert(self, key, value):
         pos = self.__trovaInsiemeGiusto(key)
-        if(self.__checkListorAvl(self.array[pos])):
+        if(self.__checkListOrAvl(self.array[pos])):
             list = ListaCollegata(self.array[pos])
             list.addAsLast(key, value)
             if(list.lenght() == 6):
@@ -58,7 +65,7 @@ class listAvl:
         else:
             avl = AVLTree(self.array[pos])
             avl.insert(key, value)
-            # bilanciamento
+            avl.balInsert(key, value)
 
     def search(self, key):
         pass
@@ -71,12 +78,6 @@ class listAvl:
         else:
             avl = AVLTree(self.array[pos])
             avl.delete(key)
-            #bilanciamento
-            if(avl.numberOfNode() == 5):     #metodo da implementare
+            avl.balDelete(key)
+            if(avl.size() == 5):     #metodo da implementare
                 self.__change(avl)
-
-
-
-
-
-

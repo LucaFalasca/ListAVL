@@ -10,7 +10,7 @@
     bilanciato in altezza
 """
 from Collection.dictTrees.binarySearchTree import BinarySearchTree
-from Collection.trees.binaryTree import BinaryTree
+from Collection.trees.binaryTree import BinaryTree, BinaryNode
 
 
 class AVLTree(BinarySearchTree):
@@ -209,8 +209,6 @@ class AVLTree(BinarySearchTree):
                 self.__setHeight(p, th)
                 self.cutSingleSon(p)
 
-    def numberOfNode(self):
-        pass
 
 if __name__ == "__main__":
     avl = AVLTree()
