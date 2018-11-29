@@ -14,9 +14,6 @@ class listAvl:
             self.array[i] = []
 
 
-    def ciao:
-        pass
-
     #trova l'insieme di appartenenza data una chiave
     def trovaInsiemeGiusto(self, key):
         for i in range(self.d):
