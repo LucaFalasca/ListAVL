@@ -58,7 +58,25 @@ class listAvl:
         else:
             avl = AVLTree(self.array[pos])
             avl.insert(key, value)
+            # bilanciamento
+
+    def search(self, key):
+        pass
+
+    def delete(self, key):
+        pos = self.__trovaInsiemeGiusto(key)
+        if(self.__checkListOrAvl(self.array[pos])):
+            list = ListaCollegata(self.array[pos])
+            list.deleteRecord(key) #metodo da implementare
+        else:
+            avl = AVLTree(self.array[pos])
+            avl.delete(key)
             #bilanciamento
+            if(avl.numberOfNode() == 5):     #metodo da implementare
+                self.__change(avl)
+
+
+
 
 
 

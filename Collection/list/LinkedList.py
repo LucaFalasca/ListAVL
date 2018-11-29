@@ -76,6 +76,12 @@ class ListaCollegata:
                 self.last = None  # empty list_!
             return res
 
+    def popLast(self):
+        pass
+
+    def deleteRecord(self, key):
+        pass                            #controllo sulla lista vuota
+
     # popLast e deleteRecord not efficient now
 
     def getFirstRecord(self):
