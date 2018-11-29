@@ -51,7 +51,8 @@ class listAvl:
             list = ListaCollegata()
             AVLTree(coll)
             for i in range(5):
-                coll.cutSingleSon()
+                pass
+                #da finire (trova nodo)
 
 
 

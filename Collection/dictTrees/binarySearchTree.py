@@ -8,8 +8,7 @@
     Questo modulo contiene l'implementazione
     dell'albero binario di ricerca (BST)
 """
-
-
+from Collection.Dictionary import Dictionary
 from Collection.trees.binaryTree import BinaryTree
 
 
