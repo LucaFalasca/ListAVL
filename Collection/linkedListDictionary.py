@@ -77,6 +77,8 @@ class LinkedListDictionary(Dictionary):
         else:
             pred.next = current.next
 
+    def popFirst(self):
+        pass
 
 if __name__ == "__main__":
     dic = LinkedListDictionary()

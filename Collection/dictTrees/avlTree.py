@@ -177,7 +177,7 @@ class AVLTree(BinarySearchTree):
     def cutSingleSon(self, node):
         """
         Rimuoviamo l'unico figlio (se esiste) di node
-        ed effettuiamo un bilanciato dell'albero
+        ed effettuiamo un bilanciamento dell'albero
         :param node:
         :return:
         """
