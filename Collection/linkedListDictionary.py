@@ -8,9 +8,8 @@
     Questo modulo contiene l'implementazione
     di un dizionario con una lista collegata
 """
-
-from datastruct.Queue import ListaCollegata
-from Dictionary import Dictionary
+from Collection.Dictionary import Dictionary
+from Collection.list.LinkedList import ListaCollegata
 
 
 class LinkedListDictionary(Dictionary):

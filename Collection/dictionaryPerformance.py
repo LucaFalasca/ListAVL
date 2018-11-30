@@ -1,8 +1,8 @@
-from dictionary.dictTrees.binarySearchTree import BinarySearchTree
-from dictionary.dictTrees.avlTree import AVLTree
-from dictionary.linkedListDictionary import LinkedListDictionary
-
 from time import time
+
+from Collection.dictTrees.avlTree import AVLTree
+from Collection.dictTrees.binarySearchTree import BinarySearchTree
+from Collection.linkedListDictionary import LinkedListDictionary
 
 
 def dictionaryPerformance(ops, dic):

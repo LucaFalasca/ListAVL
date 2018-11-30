@@ -14,9 +14,8 @@
 
 class Record:
 
-    def __init__(self, key, value):
-        self.key = key
-        self.value = value
+    def __init__(self, elem):
+        self.elem= elem
         self.next = None
 
 
@@ -51,16 +50,16 @@ class ListaCollegata:
         else:
             return self.last.elem
 
-    def addAsLast(self, key, value):
-        rec = Record(key, value)
+    def addAsLast(self, elem):
+        rec = Record(elem)
         if self.first == None:
             self.first = self.last = rec
         else:
             self.last.next = rec
             self.last = rec
 
-    def addAsFirst(self, key, value):
-        rec = Record(key, value)
+    def addAsFirst(self, elem):
+        rec = Record(elem)
         if self.first == None:
             self.first = self.last = rec
         else:

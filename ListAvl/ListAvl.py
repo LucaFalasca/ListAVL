@@ -1,4 +1,5 @@
 from Collection.dictTrees.avlTree import AVLTree
+from Collection.linkedListDictionary import LinkedListDictionary
 from Collection.list.LinkedList import ListaCollegata
 
 
@@ -15,7 +16,7 @@ class listAvl:
         self.d = (max - min) / b #da fare il modulo
         self.array = []
         for i in range(self.d + 2):
-            self.array[i] = [ListaCollegata()]
+            self.array[i] = [LinkedListDictionary()]
 
 
 
@@ -32,9 +33,9 @@ class listAvl:
 
     # ritorna true se la collezione e' una lista e false se e' avl
     def __checkListOrAvl(self, coll):
-        if(type(coll) == ListaCollegata):
+        if(type(coll) == LinkedListDictionary()):
             return True
-        elif(type(coll) == AVLTree):
+        elif(type(coll) == AVLTree()):
             return False
         else:
             pass
@@ -59,7 +60,7 @@ class listAvl:
     def insert(self, key, value):
         pos = self.__trovaInsiemeGiusto(key)
         if(self.__checkListOrAvl(self.array[pos])):
-            list = ListaCollegata(self.array[pos])
+            list = LinkedListDictionary(self.array[pos])
             list.addAsLast(key, value)
             if(list.lenght() == 6):
                 self.__change(list)
@@ -71,29 +72,18 @@ class listAvl:
     def search(self, key):
         pos = self.__trovaInsiemeGiusto(key)
         if(self.__checkListOrAvl(self.array[pos])):
-            list = ListaCollegata(self.array[pos])
-            current  = list.getFirstRecord()
-            while(current != None):
-                if(key == current):
-                    return True
-                 current = current.next
-            return False
+            list = LinkedListDictionary(self.array[pos])
+            list.search(key)
         else:
             pass
-            #cerca elemento in AVL
 
-
-            #search in linkedList
-        else:
-            pass
-            #search in avl
 
 
     def delete(self, key):
         pos = self.__trovaInsiemeGiusto(key)
         if(self.__checkListOrAvl(self.array[pos])):
-            list = ListaCollegata(self.array[pos])
-            list.deleteRecord(key) #metodo da implementare
+            list = LinkedListDictionary(self.array[pos])
+            list.delete(key) #metodo da implementare
         else:
             avl = AVLTree(self.array[pos])
             avl.delete(key)
