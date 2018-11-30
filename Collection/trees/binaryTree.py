@@ -8,9 +8,9 @@
     Questo modulo contiene implementazione di alberi binari
 """
 
-from datastruct.Stack import PilaArrayList
-from trees.tree import Tree as Tree
 
+from Collection.Stack import PilaArrayList
+from Collection.trees.tree import Tree
 
 class BinaryNode:
     """
