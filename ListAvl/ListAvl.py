@@ -75,11 +75,10 @@ class listAvl(Dictionary):
         pos = self.__findRightSet(key)
         if(self.__checkListOrAvl(self.array[pos])):
             list = self.array[pos]
-            list.search(key)
+            return list.search(key)
         else:
-            pass
-
-
+            avl = self.array[pos]
+            return avl.search(key)
 
     def delete(self, key):
         pos = self.__findRightSet(key)
@@ -92,6 +91,3 @@ class listAvl(Dictionary):
             avl.balDelete(key)
             if(avl.size() == 5):
                 self.array[pos] = self.__avlToList(avl)
-
-
-
