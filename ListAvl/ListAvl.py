@@ -4,7 +4,7 @@ from Collection.linkedListDictionary import LinkedListDictionary
 from Collection.list.LinkedList import ListaCollegata
 
 
-class listAvl(Dictionary):
+class ListAvl(Dictionary):
     def __init__(self, min, max, b):
         self.min = min
         self.max = max
@@ -14,20 +14,20 @@ class listAvl(Dictionary):
             #eccezione
         else:
             self.b = b
-        self.d = (max - min) / b #da fare il modulo
-        self.array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
-        for i in range(self.d + 2):
-            self.array[i] = LinkedListDictionary()
+        self.__d = (max - min) / b #da fare il modulo
+        self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
+        for i in range(self.__d + 2):
+            self.__array[i] = LinkedListDictionary()
 
     #trova l'insieme di appartenenza data una chiave
     def __findRightSet(self, key):
-        for i in range(self.d):
+        for i in range(self.__d):
             if(self.min + i * self.b <= key < self.min + (i + 1) * self.b):
                 return i
         if(key < min):
-            return self.d
+            return self.__d
         else:
-            return self.d + 1
+            return self.__d + 1
 
     #ritorna true se la collezione e' una lista e false se e' avl
     def __checkListOrAvl(self, coll):
@@ -60,34 +60,50 @@ class listAvl(Dictionary):
 
     def insert(self, key, value):
         pos = self.__findRightSet(key)
-        if(self.__checkListOrAvl(self.array[pos])):
-            list = self.array[pos]
+        if(self.__checkListOrAvl(self.__array[pos])):
+            list = self.__array[pos]
             list.insert(key, value)
             if(list.theList.lenght() == 6):
-                self.array[pos] = self.__listToAvl(list)
+                self.__array[pos] = self.__listToAvl(list)
         else:
-            avl = self.array[pos]
+            avl = self.__array[pos]
             avl.insert(key, value)
             elem = avl.search(key)
             avl.balInsert(elem)
 
     def search(self, key):
         pos = self.__findRightSet(key)
-        if(self.__checkListOrAvl(self.array[pos])):
-            list = self.array[pos]
+        if(self.__checkListOrAvl(self.__array[pos])):
+            list = self.__array[pos]
             return list.search(key)
         else:
-            avl = self.array[pos]
+            avl = self.__array[pos]
             return avl.search(key)
 
     def delete(self, key):
         pos = self.__findRightSet(key)
-        if(self.__checkListOrAvl(self.array[pos])):
-            list = self.array[pos]
+        if(self.__checkListOrAvl(self.__array[pos])):
+            list = self.__array[pos]
             list.delete(key)
         else:
-            avl = self.array[pos]
+            avl = self.__array[pos]
             avl.delete(key)
             avl.balDelete(key)
             if(avl.size() == 5):
-                self.array[pos] = self.__avlToList(avl)
+                self.__array[pos] = self.__avlToList(avl)
+
+if __name__ == "__main__":
+    listAvl = ListAvl(1, 17, 8)
+
+    listAvl.insert(1, "prova1")
+    listAvl.insert(2, "prova2")
+    listAvl.insert(10, "prova3")
+    listAvl.insert(11, "prova4")
+    listAvl.insert(-4, "prova5")
+    listAvl.insert(30, "prova6")
+
+    print(listAvl.search(1))
+    print(listAvl.search(4))
+
+    listAvl.delete(1)
+    print(listAvl.search(1))
