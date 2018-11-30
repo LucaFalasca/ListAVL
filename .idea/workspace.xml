@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="ho messo i __">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListAvl/ListAvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/ListAvl/ListAvl.py" afterDir="false" />
+=======
+    <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/Prog1_Falasca_Stinziani.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Prog1_Falasca_Stinziani.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,32 +19,48 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1677547901">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
+          <entry key="py" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="7" />
+          <entry key="Python" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="1" />
-          <entry key="txt" value="54" />
+          <entry key="py" value="529" />
+          <entry key="txt" value="318" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
+<<<<<<< Updated upstream
           <entry key="PLAIN_TEXT" value="54" />
           <entry key="Python" value="1" />
         </counts>
@@ -65,15 +88,20 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Python" value="12" />
+=======
+          <entry key="PLAIN_TEXT" value="318" />
+          <entry key="Python" value="529" />
+>>>>>>> Stashed changes
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="432">
               <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
               <folding>
@@ -81,45 +109,77 @@
                 <marker date="1543506612849" expanded="true" signature="510:515" ph="..." />
                 <marker date="1543506612849" expanded="true" signature="912:1101" ph="..." />
                 <marker date="1543506612849" expanded="true" signature="1163:1483" ph="..." />
+=======
+            <state relative-caret-position="505">
+              <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+              <folding>
+                <element signature="e#0#48#0" expanded="true" />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Collection/Dictionary.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
+        <entry file="file://$PROJECT_DIR$/Collection/trees/treeArrayList.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
             <state relative-caret-position="270">
               <caret line="18" column="24" lean-forward="true" selection-start-line="18" selection-start-column="24" selection-end-line="18" selection-end-column="24" />
               <folding>
                 <marker date="1543502591723" expanded="true" signature="725:935" ph="..." />
               </folding>
             </state>
+=======
+            <state relative-caret-position="-1016" />
+>>>>>>> Stashed changes
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1746">
               <caret line="97" column="21" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="21" />
               <folding>
                 <element signature="e#250#294#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="82" column="68" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+              <folding>
+                <marker date="1543502000475" expanded="true" signature="1946:2021" ph="..." />
+>>>>>>> Stashed changes
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/Collection/Dictionary.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
               <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+=======
+        <entry file="file://$PROJECT_DIR$/Collection/dictTrees/avlTree.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="448">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
+>>>>>>> Stashed changes
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/Collection/trees/binaryTree.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
@@ -147,10 +207,15 @@
               </folding>
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/Collection/trees/tree.py">
+          <provider selected="true" editor-type-id="text-editor" />
+>>>>>>> Stashed changes
         </entry>
       </file>
     </leaf>
   </component>
+<<<<<<< Updated upstream
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -164,16 +229,23 @@
       <find>info</find>
     </findStrings>
   </component>
+=======
+>>>>>>> Stashed changes
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< Updated upstream
         <option value="$PROJECT_DIR$/ListAvl/prova.py" />
         <option value="$PROJECT_DIR$/Collection/list/LinkedList.py" />
         <option value="$PROJECT_DIR$/Collection/dictTrees/avlTree.py" />
         <option value="$PROJECT_DIR$/Collection/dictTrees/binarySearchTree.py" />
+=======
+        <option value="$PROJECT_DIR$/Collection/list/LinkedList.py" />
+        <option value="$PROJECT_DIR$/Collection/dictTrees/avlTree.py" />
+>>>>>>> Stashed changes
         <option value="$PROJECT_DIR$/ListAvl/ListAvl.py" />
       </list>
     </option>
@@ -189,7 +261,6 @@
     <option name="width" value="683" />
     <option name="height" value="728" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -208,29 +279,6 @@
               <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
               <item name="Collection" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
-              <item name="Collection" type="462c0819:PsiDirectoryNode" />
-              <item name="dictTrees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
-              <item name="Collection" type="462c0819:PsiDirectoryNode" />
-              <item name="list" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
-              <item name="Collection" type="462c0819:PsiDirectoryNode" />
-              <item name="trees" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Prog1_Falasca_Stinziani" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Prog1_Falasca_Stinziani" type="462c0819:PsiDirectoryNode" />
-              <item name="ListAvl" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -239,12 +287,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\ProgettiPyCharm\Prog1_Falasca_Stinziani" />
       <recent name="E:\ProgettiPyCharm\Prog1_Falasca_Stinziani\Collection" />
+      <recent name="E:\ProgettiPyCharm\Prog1_Falasca_Stinziani" />
     </key>
   </component>
   <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
@@ -261,6 +309,11 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
+<<<<<<< Updated upstream
+=======
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/Collection/dictTrees/avlTree.py</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/ListAvl/ListAvl.py</PATH>
+>>>>>>> Stashed changes
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -268,9 +321,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
+<<<<<<< Updated upstream
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Collection/Dictionary.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Collection/dictionaryPerformance.py</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/Collection/linkedListDictionary.py</PATH>
+=======
+>>>>>>> Stashed changes
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -403,13 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1543485654578</updated>
     </task>
-    <task id="LOCAL-00004" summary="ho tolto la ù">
-      <created>1543486222406</created>
+    <task id="LOCAL-00004" summary="implementazione metodi:&#10;delete in lista AVL&#10;&#10;definizione metodi:&#10;search in lista AVL&#10;popLast,delete in LinkedList&#10;numberOfNode in AVLtree">
+      <created>1543502555844</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1543486222406</updated>
+      <updated>1543502555844</updated>
     </task>
+<<<<<<< Updated upstream
     <task id="LOCAL-00005" summary="ho tolto la ù">
       <created>1543500858397</created>
       <option name="number" value="00005" />
@@ -432,11 +489,20 @@
       <updated>1543505727973</updated>
     </task>
     <option name="localTasksCounter" value="8" />
+=======
+    <task id="LOCAL-00005" summary="ho aggiunto dictionary.py&#10;dictionaryPerformance.py&#10;linkedListDictionary.py&#10;in Collection">
+      <created>1543505895187</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543505895187</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+>>>>>>> Stashed changes
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,10 +515,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32879046" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -472,20 +538,24 @@
     <MESSAGE value="tolto def ciao" />
     <MESSAGE value="add collection" />
     <MESSAGE value="add dictionary trees" />
+<<<<<<< Updated upstream
     <MESSAGE value="ho tolto la ù" />
     <MESSAGE value="ho messo i __" />
     <option name="LAST_COMMIT_MESSAGE" value="ho messo i __" />
+=======
+    <MESSAGE value="implementazione metodi:&#10;delete in lista AVL&#10;&#10;definizione metodi:&#10;search in lista AVL&#10;popLast,delete in LinkedList&#10;numberOfNode in AVLtree" />
+    <MESSAGE value="ho aggiunto dictionary.py&#10;dictionaryPerformance.py&#10;linkedListDictionary.py&#10;in Collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="ho aggiunto dictionary.py&#10;dictionaryPerformance.py&#10;linkedListDictionary.py&#10;in Collection" />
+>>>>>>> Stashed changes
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Collection/LinkedList.py" />
     <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/__init__.py" />
     <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/list/LinkedList.py" />
     <entry file="file://$PROJECT_DIR$/5 - dictionarytrees/Dictionary.py" />
-    <entry file="file://$PROJECT_DIR$/Collection/list/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ListAvl/prova.py">
+    <entry file="file://$PROJECT_DIR$/Collection/trees/treeArrayList.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state>
           <caret lean-forward="true" selection-end-line="12" selection-end-column="30" />
         </state>
@@ -512,12 +582,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+=======
+        <state relative-caret-position="-1016" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="82" column="68" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
+>>>>>>> Stashed changes
           <folding>
-            <element signature="e#276#342#0" expanded="true" />
+            <marker date="1543502000475" expanded="true" signature="1946:2021" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Collection/trees/tree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -546,11 +626,18 @@
           <folding>
             <element signature="e#250#294#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/Collection/dictTrees/avlTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+>>>>>>> Stashed changes
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< Updated upstream
         <state relative-caret-position="432">
           <caret line="54" column="26" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
           <folding>
@@ -558,9 +645,18 @@
             <marker date="1543506612849" expanded="true" signature="510:515" ph="..." />
             <marker date="1543506612849" expanded="true" signature="912:1101" ph="..." />
             <marker date="1543506612849" expanded="true" signature="1163:1483" ph="..." />
+=======
+        <state relative-caret-position="505">
+          <caret line="79" column="27" lean-forward="true" selection-start-line="79" selection-start-column="27" selection-end-line="79" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+>>>>>>> Stashed changes
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/Dictionary.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
