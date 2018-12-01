@@ -13,9 +13,9 @@ class ListAvl(Dictionary):
             #eccezione
         else:
             self.b = b
-        self.__d = (max - min) / b #da fare il modulo
+        self.__d = abs(int((max - min) / b)) #da fare il modulo
         self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
-        for i in range(self.__d + 2):
+        for i in range(self.__d + 1):
             self.__array[i] = LinkedListDictionary()
 
     #trova l'insieme di appartenenza data una chiave
