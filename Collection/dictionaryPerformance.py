@@ -2,7 +2,7 @@ from time import time
 
 from Collection.dictTrees.avlTree import AVLTree
 from Collection.dictTrees.binarySearchTree import BinarySearchTree
-from Collection.linkedListDictionary import LinkedListDictionary
+from Collection.list.linkedListDictionary import LinkedListDictionary
 
 
 def dictionaryPerformance(ops, dic):

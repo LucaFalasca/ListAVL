@@ -13,11 +13,13 @@
 import sys
 import os
 
+from Collection.list.LinkedList import ListaCollegata
+
 sys.path.append(str(os.environ.get("PYTHONPATH")) + "/Lez2/")
 # to import a library from a directory that isn't the current one
 # it needs to specify the path
 # $PYTHONPATH is the environment variable containing the project home
-from list.LinkedList import ListaCollegata
+
 
 
 """ 

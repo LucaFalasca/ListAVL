@@ -1,7 +1,6 @@
 from Collection.Dictionary import Dictionary
 from Collection.dictTrees.avlTree import AVLTree
-from Collection.linkedListDictionary import LinkedListDictionary
-
+from Collection.list.linkedListDictionary import LinkedListDictionary
 
 
 class ListAvl(Dictionary):

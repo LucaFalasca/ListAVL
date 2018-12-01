@@ -12,6 +12,7 @@
 from Collection.Stack import PilaArrayList
 from Collection.trees.tree import Tree
 
+
 class BinaryNode:
     """
     Classe che rappresenta un nodo di un albero binario
