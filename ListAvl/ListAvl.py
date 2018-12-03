@@ -1,6 +1,7 @@
 from Collection.Dictionary import Dictionary
 from Collection.dictTrees.avlTree import AVLTree
 from Collection.list.linkedListDictionary import LinkedListDictionary
+from time import time
 
 class ListAvl(Dictionary):
     def __init__(self, min, max, b, r = 6):
@@ -112,11 +113,24 @@ class MaxMinSubControlError(Exception):
 
 
 if __name__ == "__main__":
-    listAvl = ListAvl(9, 10, 8)
+    listAvl = ListAvl(1, 17, 8)
 
-    for i in range(20, 40):
+    inizio = time()
+    for i in range(0, 10000):
         listAvl.insert(i, i * 2)
+    fine = time() - inizio
+    print(fine)
 
-    listAvl.print()
+    inizio = time()
+    for i in range(0, 10000):
+        listAvl.search(i)
+    fine = time() - inizio
+    print(fine)
 
-    print(listAvl.search(0))
+    inizio = time()
+    for i in range(0, 10000):
+        listAvl.delete(i)
+    fine = time() - inizio
+    print(fine)
+
+

@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/Prog1_Falasca_Stinziani.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Prog1_Falasca_Stinziani.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="2db2d9cc-b7b0-485a-9181-d27bd1f95b33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Collection/list/LinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/Collection/list/LinkedList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ListAvl/ListAvl.py" beforeDir="false" afterPath="$PROJECT_DIR$/ListAvl/ListAvl.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +13,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/Prog1_Falasca_Stinziani$LinkedList.coverage" NAME="LinkedList Coverage Results" MODIFIED="1543842509729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Collection/list" />
-    <SUITE FILE_PATH="coverage/Prog1_Falasca_Stinziani$ListAvl.coverage" NAME="ListAvl Coverage Results" MODIFIED="1543843185093" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ListAvl" />
+    <SUITE FILE_PATH="coverage/Prog1_Falasca_Stinziani$ListAvl.coverage" NAME="ListAvl Coverage Results" MODIFIED="1543846838006" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ListAvl" />
     <SUITE FILE_PATH="coverage/Prog1_Falasca_Stinziani$binaryTree.coverage" NAME="binaryTree Coverage Results" MODIFIED="1543593881146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Collection/trees" />
   </component>
   <component name="FUSProjectUsageTrigger">
@@ -55,14 +52,14 @@
         <counts>
           <entry key="Python Console" value="90" />
           <entry key="dummy" value="13" />
-          <entry key="py" value="3575" />
-          <entry key="txt" value="185" />
+          <entry key="py" value="4246" />
+          <entry key="txt" value="265" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="198" />
-          <entry key="Python" value="3665" />
+          <entry key="PLAIN_TEXT" value="278" />
+          <entry key="Python" value="4336" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -91,11 +88,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2">
-              <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+            <state relative-caret-position="155">
+              <caret line="117" column="19" lean-forward="true" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <marker date="1543843185068" expanded="true" signature="3190:3287" ph="..." />
+                <marker date="1543847143924" expanded="true" signature="3381:3784" ph="..." />
               </folding>
             </state>
           </provider>
@@ -442,18 +439,40 @@
       <option name="project" value="LOCAL" />
       <updated>1543834582078</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Aggiunta del print e fix del change">
+      <created>1543843402609</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543843402609</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Aggiunte classi di Errori">
+      <created>1543845398654</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1543845398654</updated>
+    </task>
+    <task id="LOCAL-00016" summary="useless">
+      <created>1543845556495</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543845556495</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32879046" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.92504257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.25553662" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -489,7 +508,10 @@
     <MESSAGE value="Aggiunta del main" />
     <MESSAGE value="aggiunta della classe stack e prove e casini sugli import" />
     <MESSAGE value="FINITO (quasi) TUTTO!" />
-    <option name="LAST_COMMIT_MESSAGE" value="FINITO (quasi) TUTTO!" />
+    <MESSAGE value="Aggiunta del print e fix del change" />
+    <MESSAGE value="Aggiunte classi di Errori" />
+    <MESSAGE value="useless" />
+    <option name="LAST_COMMIT_MESSAGE" value="useless" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -581,13 +603,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Collection/list/linkedListDictionary.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-235">
-          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Collection/list/LinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -595,6 +610,13 @@
           <folding>
             <marker date="1543842509705" expanded="true" signature="724:918" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Collection/list/linkedListDictionary.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-235">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -610,11 +632,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ListAvl/ListAvl.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2">
-          <caret line="67" column="34" selection-start-line="67" selection-start-column="34" selection-end-line="67" selection-end-column="34" />
+        <state relative-caret-position="155">
+          <caret line="117" column="19" lean-forward="true" selection-start-line="117" selection-start-column="19" selection-end-line="117" selection-end-column="19" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <marker date="1543843185068" expanded="true" signature="3190:3287" ph="..." />
+            <marker date="1543847143924" expanded="true" signature="3381:3784" ph="..." />
           </folding>
         </state>
       </provider>
