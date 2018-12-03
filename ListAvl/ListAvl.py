@@ -8,11 +8,10 @@ class ListAvl(Dictionary):
         self.max = max
         self.r = 6
         if(b <= self.r or (max - min) % b != 0):
-            pass
-            #eccezione
+            raise bControlError()
         else:
             self.b = b
-        self.__d = abs(int((max - min) / b)) #da fare il modulo
+        self.__d = int((max - min) / b)
         self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
         for i in range(self.__d - 1):
             self.__array.append(0)
@@ -92,18 +91,27 @@ class ListAvl(Dictionary):
             if(avl.size() == 5):
                 self.__array[pos] = self.__avlToList(avl)
 
+class bControlError(Exception):
+    def __init__(self):
+        super().__init__("Valore di b non coerente con le condizioni")
+
 if __name__ == "__main__":
     listAvl = ListAvl(1, 17, 8)
 
     listAvl.insert(1, "prova1")
+    listAvl.insert(2, "prova2")
     listAvl.insert(10, "prova3")
     listAvl.insert(11, "prova4")
     listAvl.insert(-4, "prova5")
     listAvl.insert(30, "prova6")
+    listAvl.insert(3, "prova7")
+    listAvl.insert(4, "prova8")
+    listAvl.insert(5, "prova9")
+    listAvl.insert(6, "prova10")
 
     print(listAvl.search(1))
     print(listAvl.search(-4))
     print(listAvl.search(11))
 
     listAvl.delete(1)
-    print(listAvl.search(1))
+    print(listAvl.search(2))
