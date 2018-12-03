@@ -33,7 +33,7 @@ class ListaCollegata:
             return 0
         c = 1
         rec = Record(self.first)
-        while(rec.next == None):
+        while(rec.next != None):
             rec = Record(rec.next)
             c += 1
         return c
@@ -121,6 +121,7 @@ if __name__ == "__main__":
 
     print("addAsFirst(2)")
     l.addAsFirst(2)
+    print(l.lenght())
     print("addAsFirst(3)")
     l.addAsFirst(3)
     print("addAsLast(4)")
@@ -137,3 +138,4 @@ if __name__ == "__main__":
     print("popFirst()", l.popFirst())
     l.printOrdered()
     print("findLast()=", l.getLast())
+    print(l.lenght())

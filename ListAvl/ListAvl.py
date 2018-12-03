@@ -14,6 +14,8 @@ class ListAvl(Dictionary):
             self.b = b
         self.__d = abs(int((max - min) / b)) #da fare il modulo
         self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
+        for i in range(self.__d - 1):
+            self.__array.append(0)
         for i in range(self.__d + 2):
             self.__array[i] = LinkedListDictionary()
 
@@ -22,7 +24,7 @@ class ListAvl(Dictionary):
         for i in range(self.__d):
             if(self.min + i * self.b <= key < self.min + (i + 1) * self.b):
                 return i
-        if(key < min):
+        if(key < self.min):
             return self.__d
         else:
             return self.__d + 1
@@ -61,9 +63,7 @@ class ListAvl(Dictionary):
         if(self.__checkListOrAvl(self.__array[pos])):
             list = self.__array[pos]
             list.insert(key, value)
-            print(5)
             if(list.theList.lenght() == 6):
-                print(5)
                 self.__array[pos] = self.__listToAvl(list)
         else:
             avl = self.__array[pos]
@@ -96,13 +96,14 @@ if __name__ == "__main__":
     listAvl = ListAvl(1, 17, 8)
 
     listAvl.insert(1, "prova1")
-  #  listAvl.insert(10, "prova3")
-  #  listAvl.insert(11, "prova4")
-   # listAvl.insert(-4, "prova5")
-   # listAvl.insert(30, "prova6")
+    listAvl.insert(10, "prova3")
+    listAvl.insert(11, "prova4")
+    listAvl.insert(-4, "prova5")
+    listAvl.insert(30, "prova6")
 
     print(listAvl.search(1))
-    print(listAvl.search(4))
+    print(listAvl.search(-4))
+    print(listAvl.search(11))
 
     listAvl.delete(1)
     print(listAvl.search(1))
