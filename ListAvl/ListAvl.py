@@ -109,6 +109,7 @@ if __name__ == "__main__":
     listAvl.insert(5, "prova9")
     listAvl.insert(6, "prova10")
 
+
     print(listAvl.search(1))
     print(listAvl.search(-4))
     print(listAvl.search(11))
