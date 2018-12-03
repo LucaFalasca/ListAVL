@@ -110,6 +110,7 @@ class MaxMinSubControlError(Exception):
     def __init__(self):
         super().__init__("I valori di max e min non permettono nessun di valore di b valido")
 
+
 if __name__ == "__main__":
     listAvl = ListAvl(9, 10, 8)
 
