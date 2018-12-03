@@ -117,6 +117,7 @@ if __name__ == "__main__":
 
     listAvl.print()
 
+
     print(listAvl.search(1))
     print(listAvl.search(-4))
     print(listAvl.search(11))
