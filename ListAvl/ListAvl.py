@@ -43,7 +43,6 @@ class ListAvl(Dictionary):
         for i in range(self.r):
             elem = list.theList.popFirst()
             avl.insert(elem[list.KEY_INDEX], elem[list.VALUE_INDEX])
-            avl.balInsert(elem)
         return avl
 
     #dato un avl ritorna una lista con gli elementi dell'avl
@@ -53,7 +52,6 @@ class ListAvl(Dictionary):
             rootNode = avl.tree.root
             list.insert(rootNode.info[0], rootNode.info[1])
             avl.delete(rootNode.info[0])
-            avl.balDelete(rootNode)
         return list
 
 
@@ -68,7 +66,6 @@ class ListAvl(Dictionary):
             avl = self.__array[pos]
             avl.insert(key, value)
             elem = avl.search(key)
-            avl.balInsert(elem)
 
     def search(self, key):
         pos = self.__findRightSet(key)
@@ -87,9 +84,15 @@ class ListAvl(Dictionary):
         else:
             avl = self.__array[pos]
             avl.delete(key)
-            avl.balDelete(key)
             if(avl.size() == 5):
                 self.__array[pos] = self.__avlToList(avl)
+
+    def print(self):
+        for i in range(self.__d + 2):
+            print("posizione " + str(i) + ":\n")
+            self.__array[i].print()
+            print("\n")
+
 
 class bControlError(Exception):
     def __init__(self):
@@ -108,6 +111,11 @@ if __name__ == "__main__":
     listAvl.insert(4, "prova8")
     listAvl.insert(5, "prova9")
     listAvl.insert(6, "prova10")
+    for i in range(20, 40):
+        listAvl.insert(i, "prova" + str(i))
+
+
+    listAvl.print()
 
     print(listAvl.search(1))
     print(listAvl.search(-4))
@@ -115,3 +123,4 @@ if __name__ == "__main__":
 
     listAvl.delete(1)
     print(listAvl.search(2))
+
