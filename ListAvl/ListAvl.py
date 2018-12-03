@@ -3,12 +3,17 @@ from Collection.dictTrees.avlTree import AVLTree
 from Collection.list.linkedListDictionary import LinkedListDictionary
 
 class ListAvl(Dictionary):
-    def __init__(self, min, max, b):
-        self.min = min
-        self.max = max
-        self.r = 6
+    def __init__(self, min, max, b, r = 6):
+        self.r = r
+        if(max <= min):
+            raise MaxMinControlError()
+        elif (max - min <= self.r):
+            raise MaxMinSubControlError()
+        else:
+            self.min = min
+            self.max = max
         if(b <= self.r or (max - min) % b != 0):
-            raise bControlError()
+            raise BControlError()
         else:
             self.b = b
         self.__d = int((max - min) / b)
@@ -93,35 +98,24 @@ class ListAvl(Dictionary):
             self.__array[i].print()
             print("\n")
 
-
-class bControlError(Exception):
+class BControlError(Exception):
     def __init__(self):
         super().__init__("Valore di b non coerente con le condizioni")
 
+class MaxMinControlError(Exception):
+    def __init__(self):
+        super().__init__("il massimo deve essere strettamente maggiore del minimo")
+
+class MaxMinSubControlError(Exception):
+    def __init__(self):
+        super().__init__("I valori di max e min non permettono nessun di valore di b valido")
+
 if __name__ == "__main__":
-    listAvl = ListAvl(1, 17, 8)
+    listAvl = ListAvl(9, 10, 8)
 
-    listAvl.insert(1, "prova1")
-    listAvl.insert(2, "prova2")
-    listAvl.insert(10, "prova3")
-    listAvl.insert(11, "prova4")
-    listAvl.insert(-4, "prova5")
-    listAvl.insert(30, "prova6")
-    listAvl.insert(3, "prova7")
-    listAvl.insert(4, "prova8")
-    listAvl.insert(5, "prova9")
-    listAvl.insert(6, "prova10")
     for i in range(20, 40):
-        listAvl.insert(i, "prova" + str(i))
-
+        listAvl.insert(i, i * 2)
 
     listAvl.print()
 
-
-    print(listAvl.search(1))
-    print(listAvl.search(-4))
-    print(listAvl.search(11))
-
-    listAvl.delete(1)
-    print(listAvl.search(2))
-
+    print(listAvl.search(0))
