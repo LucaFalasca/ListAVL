@@ -100,4 +100,6 @@ if __name__ == "__main__":
     dic.delete(56)
     print("Deleted key 56")
     dic.print()
+    a = dic.lenght()
+    print(a)
 

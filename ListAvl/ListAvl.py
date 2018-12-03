@@ -2,7 +2,6 @@ from Collection.Dictionary import Dictionary
 from Collection.dictTrees.avlTree import AVLTree
 from Collection.list.linkedListDictionary import LinkedListDictionary
 
-
 class ListAvl(Dictionary):
     def __init__(self, min, max, b):
         self.min = min
@@ -15,7 +14,7 @@ class ListAvl(Dictionary):
             self.b = b
         self.__d = abs(int((max - min) / b)) #da fare il modulo
         self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
-        for i in range(self.__d + 1):
+        for i in range(self.__d + 2):
             self.__array[i] = LinkedListDictionary()
 
     #trova l'insieme di appartenenza data una chiave
@@ -62,7 +61,9 @@ class ListAvl(Dictionary):
         if(self.__checkListOrAvl(self.__array[pos])):
             list = self.__array[pos]
             list.insert(key, value)
+            print(5)
             if(list.theList.lenght() == 6):
+                print(5)
                 self.__array[pos] = self.__listToAvl(list)
         else:
             avl = self.__array[pos]
@@ -95,11 +96,10 @@ if __name__ == "__main__":
     listAvl = ListAvl(1, 17, 8)
 
     listAvl.insert(1, "prova1")
-    listAvl.insert(2, "prova2")
-    listAvl.insert(10, "prova3")
-    listAvl.insert(11, "prova4")
-    listAvl.insert(-4, "prova5")
-    listAvl.insert(30, "prova6")
+  #  listAvl.insert(10, "prova3")
+  #  listAvl.insert(11, "prova4")
+   # listAvl.insert(-4, "prova5")
+   # listAvl.insert(30, "prova6")
 
     print(listAvl.search(1))
     print(listAvl.search(4))
