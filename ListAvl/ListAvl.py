@@ -1,7 +1,12 @@
+import math
+import pstats
+
 from Collection.Dictionary import Dictionary
 from Collection.dictTrees.avlTree import AVLTree
 from Collection.list.linkedListDictionary import LinkedListDictionary
 from time import time
+from random import randint
+import cProfile
 
 class ListAvl(Dictionary):
     def __init__(self, min, max, b, r = 6):
@@ -18,11 +23,9 @@ class ListAvl(Dictionary):
         else:
             self.b = b
         self.__d = int((max - min) / b)
-        self.__array = [Dictionary(), AVLTree(), LinkedListDictionary()] #da chiedere
-        for i in range(self.__d - 1):
-            self.__array.append(0)
+        self.__array = []
         for i in range(self.__d + 2):
-            self.__array[i] = LinkedListDictionary()
+            self.__array.append(LinkedListDictionary())
 
     #trova l'insieme di appartenenza data una chiave
     def __findRightSet(self, key):
@@ -36,6 +39,7 @@ class ListAvl(Dictionary):
 
     #ritorna true se la collezione e' una lista e false se e' avl
     def __checkListOrAvl(self, coll):
+        isinstance(coll, Dictionary)
         if(type(coll) is LinkedListDictionary):
             return True
         elif(type(coll) is AVLTree):
@@ -108,29 +112,77 @@ class MaxMinControlError(Exception):
         super().__init__("il massimo deve essere strettamente maggiore del minimo")
 
 class MaxMinSubControlError(Exception):
-    def __init__(self):
+     def __init__(self):
         super().__init__("I valori di max e min non permettono nessun di valore di b valido")
+
+def tripleGenerator():
+    v = []
+    b = randint(7, 1000)
+    subMaxMin = b * randint(1, 50)
+    max = subMaxMin + randint(-subMaxMin, subMaxMin)
+    v.append(max - subMaxMin)
+    v.append(max)
+    v.append(b)
+    return v
+
+def tripleGeneratorOriented(v):
+    n = len(v)
+    #media degli elementi
+    somma = 0
+    for i in range(n):
+        somma += v[i]
+    media = int(somma / n)
+    print(media)
+    newN = int(math.sqrt(n))**2
+    print(int(math.sqrt(n))**2)
+    max = media + newN/2
+    min = media - newN/2
+    b = math.sqrt(newN)
+    return [min, max, b]
 
 
 if __name__ == "__main__":
-    listAvl = ListAvl(1, 17, 8)
+    """
+    v = tripleGenerator()
+    print(v)
+    listAvl = ListAvl(v[0], v[1], v[2])
+    """
+    ri = -10000
+    rf = 10000
+    v = []
+
+    for i in range(ri, rf):
+        v.append(i)
+
+    triple = tripleGeneratorOriented(v)
+    print(triple)
+    listAvl = ListAvl(triple[0], triple[1], triple[2])
 
     inizio = time()
-    for i in range(0, 10000):
+    for i in range(ri, rf):
         listAvl.insert(i, i * 2)
     fine = time() - inizio
-    print(fine)
+    print("Insert:" + str(fine))
+
+    listAvl.print()
 
     inizio = time()
-    for i in range(0, 10000):
+    for i in range(ri, rf):
         listAvl.search(i)
     fine = time() - inizio
-    print(fine)
+    print("Search: " + str(fine))
 
     inizio = time()
-    for i in range(0, 10000):
+    for i in range(ri, rf):
         listAvl.delete(i)
     fine = time() - inizio
-    print(fine)
+    print("Delete: " + str(fine))
+
+    """
+    cProfile.run('for i in range(-10000, 10000): listAvl.insert(i * 3, i * 12)', 'fileOutput')
+    p = pstats.Stats('fileOutput')
+    p.strip_dirs().sort_stats("time").print_stats()
+    """
+
 
 
