@@ -160,7 +160,9 @@ def calculateTime(n, distanza, listAvl):
     return v
 
 if __name__ == "__main__":
-    #Tripla Casuali
+
+    """
+    #Tripla Casuale
     v = tripleGenerator()
     print(v)
     listAvl = ListAvl(v[0], v[1], v[2])
@@ -250,5 +252,26 @@ if __name__ == "__main__":
             print("\t\tDelete: " + str(results[2]))
             print("\n")
         n *= 2
+        """
+        # Dizionary
+     dict = Dictionary()
+
+       print("=============================\nDictionary\n=============================\n")
+        n = 2500
+        distanza = 20
+        for k in range(6):
+            print("-----------------------")
+            print("Numero elementi: " + str(n))
+            print("-----------------------\n")
+            for i in range(3):
+                print("\t-----------------------")
+                print("\tDistanza: " + str(distanza ** i))
+                print("\t-----------------------\n")
+                results = calculateTime(n, distanza ** i, dict)
+                print("\t\tInsert: " + str(results[0]))
+                print("\t\tSearch: " + str(results[1]))
+                print("\t\tDelete: " + str(results[2]))
+                print("\n")
+            n *= 2
 
 
