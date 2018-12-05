@@ -131,11 +131,11 @@ def tripleGenerator():
 
 def tripleGeneratorOriented(v):
     n = len(v)
-    #media degli elementi
-    #sommaDistanza = 0
-    #for i in range(n - 1):
+    # media degli elementi
+    # sommaDistanza = 0
+    # for i in range(n - 1):
     #    sommaDistanza += abs(v[i] - v[i + 1])
-    #mediaDistanza = int(sommaDistanza / (n - 1))
+    # mediaDistanza = int(sommaDistanza / (n - 1))
     somma = 0
     for i in range(n):
         somma += v[i]
@@ -208,10 +208,13 @@ if __name__ == "__main__":
             print("\t-----------------------")
             print("\tDistanza: " + str(distanza**i))
             print("\t-----------------------\n")
-            results = calculateTime(n, distanza**i, listAvl)
-            print("\t\tInsert: " + str(results[0]))
-            print("\t\tSearch: " + str(results[1]))
-            print("\t\tDelete: " + str(results[2]))
+            # results = calculateTime(n, distanza**i, listAvl)
+            # print("\t\tInsert: " + str(results[0]))
+            # print("\t\tSearch: " + str(results[1]))
+            # print("\t\tDelete: " + str(results[2]))
+            cProfile.run('for i in range(0, n, distanza**i): listAvl.insert(i, i)', 'fileOutput')
+            p = pstats.Stats('fileOutput')
+            p.strip_dirs().sort_stats("time").print_stats()
             print("\n")
         n *= 2
     
