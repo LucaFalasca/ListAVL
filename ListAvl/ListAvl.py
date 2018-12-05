@@ -29,13 +29,17 @@ class ListAvl(Dictionary):
 
     #trova l'insieme di appartenenza data una chiave
     def __findRightSet(self, key):
+        """
         for i in range(self.__d):
             if(self.min + i * self.b <= key < self.min + (i + 1) * self.b):
                 return i
+        """
         if(key < self.min):
             return self.__d
-        else:
+        elif(key >= self.max):
             return self.__d + 1
+        else:
+            return int((key - self.min) / self.b)
 
     #ritorna true se la collezione e' una lista e false se e' avl
     def __checkListOrAvl(self, coll):
@@ -128,9 +132,10 @@ def tripleGenerator():
 def tripleGeneratorOriented(v):
     n = len(v)
     #media degli elementi
-    for i in range(n):
-        pass
-
+    #sommaDistanza = 0
+    #for i in range(n - 1):
+    #    sommaDistanza += abs(v[i] - v[i + 1])
+    #mediaDistanza = int(sommaDistanza / (n - 1))
     somma = 0
     for i in range(n):
         somma += v[i]
@@ -186,7 +191,7 @@ def calculateTimeDictionaryPython(n, distanza, dict):
 
 if __name__ == "__main__":
 
-    """
+
     #Tripla Casuali
     v = tripleGenerator()
     print(v)
@@ -211,6 +216,7 @@ if __name__ == "__main__":
         n *= 2
     
 
+    print(2000 % int(math.log(2000)))
     #Tripla ottimizzata
     print("=============================\nTripla orientata\n=============================\n")
     n = 2500
@@ -277,7 +283,7 @@ if __name__ == "__main__":
             print("\t\tDelete: " + str(results[2]))
             print("\n")
         n *= 2
-        """
+    
 
     #Dizionario
     dict = dict()
