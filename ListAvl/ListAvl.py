@@ -132,57 +132,125 @@ def tripleGeneratorOriented(v):
     for i in range(n):
         somma += v[i]
     media = int(somma / n)
-    print(media)
-    newN = int(math.sqrt(n))**2
-    print(int(math.sqrt(n))**2)
+    newN = int(math.sqrt(n))**23
+
+
     max = media + newN/2
     min = media - newN/2
     b = math.sqrt(newN)
     return [min, max, b]
 
 
+def calculateTime(n, distanza, listAvl):
+    v = []
+    r = int((n * distanza) / 2)
+    start = time()
+    for i in range(-r, r, distanza):
+        listAvl.insert(i, i)
+    v.append(time() - start)
+
+    start = time()
+    for i in range(-r, r, distanza):
+        listAvl.search(i)
+    v.append(time() - start)
+
+    start = time()
+    for i in range(-r, r, distanza):
+        listAvl.delete(i)
+    v.append(time() - start)
+
+    return v
+
 if __name__ == "__main__":
-    """
+    #Tripla Casuali
     v = tripleGenerator()
     print(v)
     listAvl = ListAvl(v[0], v[1], v[2])
-    """
-    ri = -10000
-    rf = 10000
-    v = []
 
-    for i in range(ri, rf):
-        v.append(i)
+    print("=============================\nTripla casuale\n=============================\n")
+    n = 2500
+    distanza = 20
+    for k in range(6):
+        print("-----------------------")
+        print("Numero elementi: " + str(n))
+        print("-----------------------\n")
+        for i in range(3):
+            print("\t-----------------------")
+            print("\tDistanza: " + str(distanza**i))
+            print("\t-----------------------\n")
+            results = calculateTime(n, distanza**i, listAvl)
+            print("\t\tInsert: " + str(results[0]))
+            print("\t\tSearch: " + str(results[1]))
+            print("\t\tDelete: " + str(results[2]))
+            print("\n")
+        n *= 2
+    
 
-    triple = tripleGeneratorOriented(v)
-    print(triple)
-    listAvl = ListAvl(triple[0], triple[1], triple[2])
+    #Tripla ottimizzata
+    print("=============================\nTripla ottimizata\n=============================\n")
+    n = 2500
+    distanza = 20
+    for k in range(6):
+        print("-----------------------")
+        print("Numero elementi: " + str(n))
+        print("-----------------------\n")
+        for i in range(3):
+            elementi = []
+            r = int((n * distanza**i) / 2)
+            for j in range(-r, r, distanza**i):
+                elementi.append(j)
+            v = tripleGeneratorOriented(elementi)
+            listAvl = ListAvl(v[0], v[1], v[2])
+            print("\t-----------------------")
+            print("\tDistanza: " + str(distanza ** i))
+            print("\t-----------------------\n")
+            results = calculateTime(n, distanza ** i, listAvl)
+            print("\t\tInsert: " + str(results[0]))
+            print("\t\tSearch: " + str(results[1]))
+            print("\t\tDelete: " + str(results[2]))
+            print("\n")
+        n *= 2
 
-    inizio = time()
-    for i in range(ri, rf):
-        listAvl.insert(i, i * 2)
-    fine = time() - inizio
-    print("Insert:" + str(fine))
+    #Tripla con D piccolo
+    listAvl = ListAvl(0, 7, 7)
 
-    listAvl.print()
+    print("=============================\nTripla con D Piccolo\n=============================\n")
+    n = 2500
+    distanza = 20
+    for k in range(6):
+        print("-----------------------")
+        print("Numero elementi: " + str(n))
+        print("-----------------------\n")
+        for i in range(3):
+            print("\t-----------------------")
+            print("\tDistanza: " + str(distanza ** i))
+            print("\t-----------------------\n")
+            results = calculateTime(n, distanza ** i, listAvl)
+            print("\t\tInsert: " + str(results[0]))
+            print("\t\tSearch: " + str(results[1]))
+            print("\t\tDelete: " + str(results[2]))
+            print("\n")
+        n *= 2
 
-    inizio = time()
-    for i in range(ri, rf):
-        listAvl.search(i)
-    fine = time() - inizio
-    print("Search: " + str(fine))
+    #Tripla con D grande
+    listAvl = ListAvl(0, 7 * 1000, 7)
 
-    inizio = time()
-    for i in range(ri, rf):
-        listAvl.delete(i)
-    fine = time() - inizio
-    print("Delete: " + str(fine))
-
-    """
-    cProfile.run('for i in range(-10000, 10000): listAvl.insert(i * 3, i * 12)', 'fileOutput')
-    p = pstats.Stats('fileOutput')
-    p.strip_dirs().sort_stats("time").print_stats()
-    """
-
+    print("=============================\nTripla con D grande\n=============================\n")
+    n = 2500
+    distanza = 20
+    for k in range(6):
+        print("-----------------------")
+        print("Numero elementi: " + str(n))
+        print("-----------------------\n")
+        for i in range(3):
+            print("\t-----------------------")
+            print("\tDistanza: " + str(distanza ** i))
+            print("\t-----------------------\n")
+            results = calculateTime(n, distanza ** i, listAvl)
+            print("\t\tInsert: " + str(results[0]))
+            print("\t\tSearch: " + str(results[1]))
+            print("\t\tDelete: " + str(results[2]))
+            print("\n")
+        n *= 2
 
 
