@@ -132,9 +132,7 @@ def tripleGeneratorOriented(v):
     for i in range(n):
         somma += v[i]
     media = int(somma / n)
-    newN = int(math.sqrt(n))**23
-
-
+    newN = int(math.sqrt(n))**2
     max = media + newN/2
     min = media - newN/2
     b = math.sqrt(newN)
