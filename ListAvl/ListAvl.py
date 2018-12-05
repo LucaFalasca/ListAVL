@@ -128,6 +128,9 @@ def tripleGenerator():
 def tripleGeneratorOriented(v):
     n = len(v)
     #media degli elementi
+    for i in range(n):
+        pass
+
     somma = 0
     for i in range(n):
         somma += v[i]
@@ -159,6 +162,28 @@ def calculateTime(n, distanza, listAvl):
 
     return v
 
+
+def calculateTimeDictionaryPython(n, distanza, dict):
+    v = []
+    r = int((n * distanza) / 2)
+    start = time()
+    for i in range(-r, r, distanza):
+        dict.update({i : i})
+    v.append(time() - start)
+
+    start = time()
+    for i in range(-r, r, distanza):
+        dict.get(i)
+    v.append(time() - start)
+
+    start = time()
+    for i in range(-r, r, distanza):
+        dict.pop(i)
+    v.append(time() - start)
+
+    return v
+
+
 if __name__ == "__main__":
 
     """
@@ -187,7 +212,7 @@ if __name__ == "__main__":
     
 
     #Tripla ottimizzata
-    print("=============================\nTripla ottimizata\n=============================\n")
+    print("=============================\nTripla orientata\n=============================\n")
     n = 2500
     distanza = 20
     for k in range(6):
@@ -255,7 +280,7 @@ if __name__ == "__main__":
         """
 
     #Dizionario
-    dict = Dictionary()
+    dict = dict()
 
     print("=============================\nDizionario\n=============================\n")
     n = 2500
@@ -268,7 +293,7 @@ if __name__ == "__main__":
             print("\t-----------------------")
             print("\tDistanza: " + str(distanza ** i))
             print("\t-----------------------\n")
-            results = calculateTime(n, distanza ** i, dict)
+            results = calculateTimeDictionaryPython(n, distanza ** i, dict)
             print("\t\tInsert: " + str(results[0]))
             print("\t\tSearch: " + str(results[1]))
             print("\t\tDelete: " + str(results[2]))
