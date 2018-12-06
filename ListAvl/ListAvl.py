@@ -131,11 +131,10 @@ def tripleGenerator():
 
 def tripleGeneratorOriented(v):
     n = len(v)
-    # media degli elementi
-    # sommaDistanza = 0
-    # for i in range(n - 1):
-    #    sommaDistanza += abs(v[i] - v[i + 1])
-    # mediaDistanza = int(sommaDistanza / (n - 1))
+    sommaDistanza = 0
+    for i in range(n - 1):
+       sommaDistanza += abs(v[i] - v[i + 1])
+    mediaDistanza = int(sommaDistanza / (n - 1))
     somma = 0
     for i in range(n):
         somma += v[i]
@@ -146,6 +145,27 @@ def tripleGeneratorOriented(v):
     b = math.sqrt(newN)
     return [min, max, b]
 
+def tripleGeneratorOrientedV2(v):
+    n = len(v)
+
+    #distanza media
+    sommaDistanza = 0
+    for i in range(n - 1):
+        sommaDistanza += abs(v[i] - v[i + 1])
+    distanzaMedia = int(sommaDistanza / (n - 1))
+
+    somma = 0
+    for i in range(n):
+        somma += v[i]
+    media = int(somma / n)
+
+    b = 7
+    maxMinSub = 7 * int(n * 5 / 7)
+    min = int(- (9 / 2) + 5 * n)
+    max = maxMinSub + min
+    print(maxMinSub)
+    print([min, max, b])
+    return [min, max, b]
 
 def calculateTime(n, distanza, listAvl):
     v = []
@@ -192,34 +212,34 @@ def calculateTimeDictionaryPython(n, distanza, dict):
 if __name__ == "__main__":
 
 
-    #Tripla Casuali
-    v = tripleGenerator()
-    print(v)
-    listAvl = ListAvl(v[0], v[1], v[2])
-
-    print("=============================\nTripla casuale\n=============================\n")
-    n = 2500
-    distanza = 20
-    for k in range(6):
-        print("-----------------------")
-        print("Numero elementi: " + str(n))
-        print("-----------------------\n")
-        for i in range(3):
-            print("\t-----------------------")
-            print("\tDistanza: " + str(distanza**i))
-            print("\t-----------------------\n")
-            # results = calculateTime(n, distanza**i, listAvl)
-            # print("\t\tInsert: " + str(results[0]))
-            # print("\t\tSearch: " + str(results[1]))
-            # print("\t\tDelete: " + str(results[2]))
-            cProfile.run('for i in range(0, n, distanza**i): listAvl.insert(i, i)', 'fileOutput')
-            p = pstats.Stats('fileOutput')
-            p.strip_dirs().sort_stats("time").print_stats()
-            print("\n")
-        n *= 2
-    
-
-    print(2000 % int(math.log(2000)))
+    # #Tripla Casuali
+    # v = tripleGenerator()
+    # print(v)
+    # listAvl = ListAvl(v[0], v[1], v[2])
+    #
+    # print("=============================\nTripla casuale\n=============================\n")
+    # n = 2500
+    # distanza = 20
+    # for k in range(6):
+    #     print("-----------------------")
+    #     print("Numero elementi: " + str(n))
+    #     print("-----------------------\n")
+    #     for i in range(3):
+    #         print("\t-----------------------")
+    #         print("\tDistanza: " + str(distanza**i))
+    #         print("\t-----------------------\n")
+    #         # results = calculateTime(n, distanza**i, listAvl)
+    #         # print("\t\tInsert: " + str(results[0]))
+    #         # print("\t\tSearch: " + str(results[1]))
+    #         # print("\t\tDelete: " + str(results[2]))
+    #         cProfile.run('for i in range(0, n, distanza**i): listAvl.insert(i, i)', 'fileOutput')
+    #         p = pstats.Stats('fileOutput')
+    #         p.strip_dirs().sort_stats("time").print_stats()
+    #         print("\n")
+    #     n *= 2
+    #
+    #
+    # print(2000 % int(math.log(2000)))
     #Tripla ottimizzata
     print("=============================\nTripla orientata\n=============================\n")
     n = 2500
@@ -233,7 +253,7 @@ if __name__ == "__main__":
             r = int((n * distanza**i) / 2)
             for j in range(-r, r, distanza**i):
                 elementi.append(j)
-            v = tripleGeneratorOriented(elementi)
+            v = tripleGeneratorOrientedV2(elementi)
             listAvl = ListAvl(v[0], v[1], v[2])
             print("\t-----------------------")
             print("\tDistanza: " + str(distanza ** i))
@@ -245,66 +265,66 @@ if __name__ == "__main__":
             print("\n")
         n *= 2
 
-    #Tripla con D piccolo
-    listAvl = ListAvl(0, 7, 7)
-
-    print("=============================\nTripla con D Piccolo\n=============================\n")
-    n = 2500
-    distanza = 20
-    for k in range(6):
-        print("-----------------------")
-        print("Numero elementi: " + str(n))
-        print("-----------------------\n")
-        for i in range(3):
-            print("\t-----------------------")
-            print("\tDistanza: " + str(distanza ** i))
-            print("\t-----------------------\n")
-            results = calculateTime(n, distanza ** i, listAvl)
-            print("\t\tInsert: " + str(results[0]))
-            print("\t\tSearch: " + str(results[1]))
-            print("\t\tDelete: " + str(results[2]))
-            print("\n")
-        n *= 2
-
-    #Tripla con D grande
-    listAvl = ListAvl(0, 7 * 1000, 7)
-
-    print("=============================\nTripla con D grande\n=============================\n")
-    n = 2500
-    distanza = 20
-    for k in range(6):
-        print("-----------------------")
-        print("Numero elementi: " + str(n))
-        print("-----------------------\n")
-        for i in range(3):
-            print("\t-----------------------")
-            print("\tDistanza: " + str(distanza ** i))
-            print("\t-----------------------\n")
-            results = calculateTime(n, distanza ** i, listAvl)
-            print("\t\tInsert: " + str(results[0]))
-            print("\t\tSearch: " + str(results[1]))
-            print("\t\tDelete: " + str(results[2]))
-            print("\n")
-        n *= 2
-    
-
-    #Dizionario
-    dict = dict()
-
-    print("=============================\nDizionario\n=============================\n")
-    n = 2500
-    distanza = 20
-    for k in range(6):
-        print("-----------------------")
-        print("Numero elementi: " + str(n))
-        print("-----------------------\n")
-        for i in range(3):
-            print("\t-----------------------")
-            print("\tDistanza: " + str(distanza ** i))
-            print("\t-----------------------\n")
-            results = calculateTimeDictionaryPython(n, distanza ** i, dict)
-            print("\t\tInsert: " + str(results[0]))
-            print("\t\tSearch: " + str(results[1]))
-            print("\t\tDelete: " + str(results[2]))
-            print("\n")
-        n *= 2
+    # #Tripla con D piccolo
+    # listAvl = ListAvl(0, 7, 7)
+    #
+    # print("=============================\nTripla con D Piccolo\n=============================\n")
+    # n = 2500
+    # distanza = 20
+    # for k in range(6):
+    #     print("-----------------------")
+    #     print("Numero elementi: " + str(n))
+    #     print("-----------------------\n")
+    #     for i in range(3):
+    #         print("\t-----------------------")
+    #         print("\tDistanza: " + str(distanza ** i))
+    #         print("\t-----------------------\n")
+    #         results = calculateTime(n, distanza ** i, listAvl)
+    #         print("\t\tInsert: " + str(results[0]))
+    #         print("\t\tSearch: " + str(results[1]))
+    #         print("\t\tDelete: " + str(results[2]))
+    #         print("\n")
+    #     n *= 2
+    #
+    # #Tripla con D grande
+    # listAvl = ListAvl(0, 7 * 1000, 7)
+    #
+    # print("=============================\nTripla con D grande\n=============================\n")
+    # n = 2500
+    # distanza = 20
+    # for k in range(6):
+    #     print("-----------------------")
+    #     print("Numero elementi: " + str(n))
+    #     print("-----------------------\n")
+    #     for i in range(3):
+    #         print("\t-----------------------")
+    #         print("\tDistanza: " + str(distanza ** i))
+    #         print("\t-----------------------\n")
+    #         results = calculateTime(n, distanza ** i, listAvl)
+    #         print("\t\tInsert: " + str(results[0]))
+    #         print("\t\tSearch: " + str(results[1]))
+    #         print("\t\tDelete: " + str(results[2]))
+    #         print("\n")
+    #     n *= 2
+    #
+    #
+    # #Dizionario
+    # dict = dict()
+    #
+    # print("=============================\nDizionario\n=============================\n")
+    # n = 2500
+    # distanza = 20
+    # for k in range(6):
+    #     print("-----------------------")
+    #     print("Numero elementi: " + str(n))
+    #     print("-----------------------\n")
+    #     for i in range(3):
+    #         print("\t-----------------------")
+    #         print("\tDistanza: " + str(distanza ** i))
+    #         print("\t-----------------------\n")
+    #         results = calculateTimeDictionaryPython(n, distanza ** i, dict)
+    #         print("\t\tInsert: " + str(results[0]))
+    #         print("\t\tSearch: " + str(results[1]))
+    #         print("\t\tDelete: " + str(results[2]))
+    #         print("\n")
+    #     n *= 2
