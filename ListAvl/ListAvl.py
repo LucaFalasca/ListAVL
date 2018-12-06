@@ -9,7 +9,7 @@ from random import randint
 import cProfile
 
 class ListAvl(Dictionary):
-    def __init__(self, min, max, b, r = 6):
+    def __init__(self, min, max, b, r =6):
         self.r = r
         if(max <= min):
             raise MaxMinControlError()
@@ -145,7 +145,7 @@ def tripleGeneratorOriented(v):
     b = math.sqrt(newN)
     return [min, max, b]
 
-def tripleGeneratorOrientedV2(v):
+def tripleGeneratorOrientedV2(v, q):
     n = len(v)
 
     #distanza media
@@ -154,18 +154,14 @@ def tripleGeneratorOrientedV2(v):
         sommaDistanza += abs(v[i] - v[i + 1])
     distanzaMedia = int(sommaDistanza / (n - 1))
 
-    somma = 0
-    for i in range(n):
-        somma += v[i]
-    media = int(somma / n)
-
-    b = 7
-    maxMinSub = 7 * int(n * 5 / 7)
-    min = int(- (9 / 2) + 5 * n)
-    max = maxMinSub + min
-    print(maxMinSub)
-    print([min, max, b])
-    return [min, max, b]
+    if(distanzaMedia >= 2):
+        b = 4**2 * (int(distanzaMedia / 4)) #perchè 4 * 2 fa 8 > 6
+    else:
+        b = 6
+    maxMinSub = b * int(n * distanzaMedia / b)
+    minimo = min(v)
+    max = maxMinSub + minimo
+    return [minimo, max, b]
 
 def calculateTime(n, distanza, listAvl):
     v = []
@@ -174,6 +170,8 @@ def calculateTime(n, distanza, listAvl):
     for i in range(-r, r, distanza):
         listAvl.insert(i, i)
     v.append(time() - start)
+
+    listAvl.print()
 
     start = time()
     for i in range(-r, r, distanza):
@@ -253,7 +251,7 @@ if __name__ == "__main__":
             r = int((n * distanza**i) / 2)
             for j in range(-r, r, distanza**i):
                 elementi.append(j)
-            v = tripleGeneratorOrientedV2(elementi)
+            v = tripleGeneratorOrientedV2(elementi, 0)
             listAvl = ListAvl(v[0], v[1], v[2])
             print("\t-----------------------")
             print("\tDistanza: " + str(distanza ** i))
