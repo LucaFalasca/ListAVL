@@ -158,7 +158,6 @@ def calculateTime(n, distanza, listAvl):
 
     return v
 
-
 def calculateTimeDictionaryPython(n, distanza, dict):
     v = []
     r = int((n * distanza) / 2)
@@ -273,7 +272,6 @@ if __name__ == "__main__":
             print("\n")
         n *= 2
 
-
     # Dizionario
     dict = dict()
 
@@ -318,6 +316,3 @@ if __name__ == "__main__":
     listAvl.delete(3)
     print(listAvl.search(3))
     listAvl.print()
-
-
-
